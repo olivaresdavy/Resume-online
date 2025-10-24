@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset ="UTF-8">
+    <meta name="viewport" content ="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <link rel="stylesheet" href="resume_olivares.css">
+    <title>Resume OLIVARES Davy</title>
+</head>
+<body>
+    <div class="background"></div>  
+    <main class="mindmap">
+        <div class="noyau-central">
+            <div class="avatar">
+                <img src="Olivares_Davy_Epitech-removebg-preview.png" alt="photo de profil">
+            </div>
+            <div class="bulle">
+                <h5> OLIVARES Davy</h5>
+                <p>
+                    Ancien professionnel de la R&D pharmaceutique, je me reconvertis dans le domaine du développement informatique. <br>
+                    Ayant beaucoup d'appétence pour la data et l'IA, j'envisage de me diriger vers ces domaines lors des choix de spécialités. <br>                    
+                    Je recherche un poste en apprentissage à compter de Janvier 2026 , pour une durée de 33 mois.<br>
+                    (Rythme 2 semaines Epitech / 6 semaines entreprise)
+                </p>
+            </div>
+        </div>
+        <div class="branche haut-droite">
+            <a href="skills.html">
+                <h4>Skills</h4>
+            </a>
+        </div>
+        <div class="branche haut-gauche">
+            <a href="experiences.html">
+                <h4>Experiences</h4>
+            </a>
+        </div>
+        <div class="branche bas-droite">
+            <a href="formations.html">
+                <h4>Formations</h4>
+            </a>
+        </div>
+        <div class="branche bas-gauche">
+            <a href="projects.html">
+                <h4>Projects</h4>
+            </a>
+        </div>
+        <div class="branche centre-bas">
+            <a href="mailto:olivares.davy@gmail.com">
+                <h4>Contact</h4>
+            </a>
+        </div>
+    </main>
+<script>
+  document.addEventListener('DOMContentLoaded', function() {
+    const noyau = document.querySelector('.noyau-central');
+    const bulle = noyau.querySelector('.bulle');
+
+    // Sur mobile (<1024px), clic pour afficher/masquer la bulle
+    noyau.addEventListener('click', function() {
+      if (window.innerWidth < 1024) {
+        bulle.classList.toggle('active');
+      }
+    });
+  });
+</script>
+</body>
+</html>
